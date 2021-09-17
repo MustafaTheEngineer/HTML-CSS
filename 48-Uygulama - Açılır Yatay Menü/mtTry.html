@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Openable Menu</title>
+    <style>
+        .btn {
+            padding: 16px 40px;
+            margin: 0px;
+            float: left;
+            box-sizing: border-box;
+            background-color: gray;
+            color: white;
+            border-width: 0;
+            margin-right: 2px;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .btn:hover {
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+        
+        .openable{
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 360px;
+            visibility: hidden;
+        }
+        
+        .open:hover .openable{
+            visibility: visible;
+        }
+
+        .openable span {
+            display: block;
+            background-color: #f1f1f1;
+            color: black;
+            padding: 10px 20px;
+            text-align: left;
+            
+        }
+        
+        .openable span:hover{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="buttons">
+        <button class="btn">Anasayfa</button>
+        <button class="btn">Hakkımızda</button>
+        <button class="btn open">Kurslar
+            <div class="openable">
+                <span>Komple Uygulamalı Web Geliştirme</span>
+                <span>Web Programlama Eğitimi: Asp.NET MVC</span>
+                <span>C# Programlama Dili Eğitimi</span>
+            </div>
+        </button>
+        <button class="btn">Makale</button>
+        <button class="btn">İletişim</button>
+    </div>
+</body>
+
+</html>
