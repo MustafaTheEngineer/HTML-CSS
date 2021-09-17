@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Styling Forms</title>
+    <style>
+        /*
+		  input
+		
+		  color:#495057;
+		  background-color:#fff;
+		  border-color:#ced4da;  		  
+		  border-color:#80bdff;(focus)
+		  font-size:16px;
+		
+		  button
+		
+		  color:#fff;
+		  background-color:#007bff;
+		  border-color:#007bff;		  
+		  
+		  background-color:#0069d9;
+		  border-color:#0062cc;
+		*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 8px 20px;
+        }
+
+        #first {
+            padding-top: 16px;
+        }
+
+        .prop1 {
+            border: 1px solid black;
+            border-radius: 4px;
+            outline: 0;
+            margin: 4px 0;
+        }
+
+        .prop2 {
+            width: 100%;
+            height: 30px;
+            border-color: lightgray;
+        }
+        
+        .prop2:focus{
+            border-color: #80bdff !important;
+        }
+
+        .msg {
+            height: 60px;
+            padding-top: 10px;
+            border-color:#ffc107;
+        }
+
+        .entry input,
+        textarea,
+        select {
+            padding-left: 10px;
+        }
+
+        .button {
+            padding: 6px 12px;
+            color: white;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        
+        .button:hover{
+            background-color: #0069d9;
+            cursor: pointer;
+        }
+        
+        #form2{
+            margin-top: 10px;
+            background-color: #f1f1f1;
+            padding: 5px 20px;
+            border-radius: 4px;
+        }
+        
+        .wid-25{
+            width: 25%;
+            float: left;
+        }
+        
+        .wid-75{
+            width: 75%;
+            float: left;
+        }
+        
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+            
+        }
+        
+        #btn2{
+            margin-left: 25%;
+            margin-bottom: 15px;
+        }
+        
+        #green{
+            border-color: lightgreen;
+        }
+        
+        #red{
+            border-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="form1">
+        <div class="entry" id="first">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="prop1 prop2" name="fullName" id="green">
+        </div>
+        <div class="entry">
+            <label for="email">Email</label>
+            <input type="email" class="prop1 prop2" name="email" id="red">
+        </div>
+        <div class="entry">
+            <label for="message">Message</label>
+            <textarea name="message" class="prop1 prop2 msg" ></textarea>
+        </div>
+        <div class="entry">
+            <label for="country">Country</label>
+            <select name="country" id="country" class="prop1 prop2">
+                <option value="Türkiye">Türkiye</option>
+                <option value="Almanya">Almanya</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit" class="prop1 button">
+    </div>
+    <br>
+    <hr> <br>
+
+    <div id="form2">
+        <div class="entry" id="first">
+            <div class="wid-25">
+                <label for="fullName">Full Name</label>
+            </div>
+            <div class="wid-75">
+                <input type="text" class="prop1 prop2" name="fullName">
+            </div>
+        </div>
+        <div class="entry">
+            <div class="wid-25">
+                <label for="email">Email</label>
+            </div>
+            <div class="wid-75">
+                <input type="email" class="prop1 prop2" name="email">
+            </div>
+        </div>
+        <div class="entry">
+            <div class="wid-25">
+                <label for="message">Message</label>
+            </div>
+            <div class="wid-75">
+                <textarea name="message" class="prop1 prop2 msg" style="border-color: lightgray"></textarea>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="wid-25">
+                <label for="country">Country</label>
+            </div>
+            <div class="wid-75">
+                <select name="country" id="country" class="prop1 prop2">
+                    <option value="Türkiye">Türkiye</option>
+                    <option value="Almanya">Almanya</option>
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="prop1 button" id="btn2">
+    </div>
+</body>
+
+</html>
