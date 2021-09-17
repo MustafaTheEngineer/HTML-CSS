@@ -1,0 +1,43 @@
+$pink: #F54538;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,h4{
+    color: #fff;
+}
+
+h4{
+    @extend %lobster;
+    font-size: 8rem;
+}
+
+ul { 
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+%lobster {
+    font-family: 'Lobster', cursive;
+}
+
+%color-white{
+    color: #FFFFFF;
+}

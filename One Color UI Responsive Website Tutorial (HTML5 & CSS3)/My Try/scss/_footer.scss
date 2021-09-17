@@ -1,0 +1,23 @@
+#footer {
+    background-color: #000;
+    color: #fff;
+    @extend %lobster;
+    padding: 1rem;
+    z-index: 10;
+    
+    ul{
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #leica2020 {
+        font-size: 3rem;
+        margin-right: auto;
+    }
+
+    li {
+       margin: 0 5rem;
+        &:last-child{
+            margin-right: 14rem;
+        } 
+    } 
+}

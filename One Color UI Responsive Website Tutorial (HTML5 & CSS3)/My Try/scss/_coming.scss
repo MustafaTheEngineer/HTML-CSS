@@ -1,0 +1,29 @@
+#coming {
+    background-color:  #161616;
+    position: relative; 
+    align-items: center;
+    z-index: 1;  
+    height: 550px;
+    h4{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%);
+    }
+    #cam2{
+        position: absolute;
+        top: 46%;
+        left: 46.2%;
+        transform: translate(-50%,-50%);  
+        margin-left: 5rem;
+        
+    }
+    #circle {  
+        position: absolute;
+        left: 50%;
+        top: -10%;
+        transform: translate(-50%); 
+        z-index: -1;
+        
+    }
+}
