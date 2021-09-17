@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Exercise 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile {
+            background-color: #FAEBD7;
+            display: flex;
+            align-items: flex-start;
+            width: 500px;
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        .reply {
+            background-color: #FAEBD7;
+            display: flex;
+            align-items: flex-start; 
+        }
+
+        .pr-img,
+        .ex {
+            display: inline-block;
+        }
+
+        .ex div {
+            margin-left: 15px;
+        }
+
+        .head {
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: inline-block;
+            width: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="profile">
+         <img src="avatar.png" alt=""> 
+        <div class="ex">
+            <div class="head">
+                <h3>Lorem ipsum.</h3>
+            </div>
+            <div class="writing">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore impedit esse eveniet, cupiditate fugiat minus, perferendis excepturi dolorum aliquid alias! </p>
+                <div class="reply">
+                    <img src="avatar.png" alt="">
+                    <div class="ex">
+                        <div class="head">
+                            <h3>Lorem ipsum.</h3>
+                        </div>
+                        <div class="writing">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore impedit esse eveniet, cupiditate fugiat minus, perferendis excepturi dolorum aliquid alias! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
