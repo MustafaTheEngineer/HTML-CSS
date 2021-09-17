@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    color: #A2A2A2;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a:hover {
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/*side bar*/
+
+#side-bar {
+    border: 1px solid #E7E7E7;
+    font-size: 1.8rem;
+    padding: 5rem;
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    text-align: left;
+}
+
+#side-bar div {
+    width: 100%;
+}
+
+#side-bar-p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+#side-bar-p,
+#pages {
+    color: #AAAAAA;
+}
+
+#side-bar hr {
+    margin: 2.2rem 0;
+    width: 8rem;
+    border: none;
+    border-top: 1px solid #C7C7C7;
+}
+
+.content {
+    padding-bottom: 3rem;
+}
+
+#side-bar ul {
+    list-style: none;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+#position {
+    color: #000;
+}
+
+#social ul li {
+    font-size: 2rem;
+    font-weight: 100;
+    display: inline-block;
+    padding-right: .7rem;
+}
+
+#header span {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: #A2A2A2;
+}
+
+#header span a {
+    transition: all 0s;
+}
+
+/*webflow*/
+
+#webflow{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #fff;
+    padding: .75rem 1.5rem;
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+#webflow:hover{
+    cursor: pointer;
+}
+
+/*main*/
+
+main {
+    background-color: #F0F0F0;
+    padding: 0 5rem;
+    margin-left: 400px;
+}
+
+#page-title,.post{
+    border: 1px solid #E2E2E2;
+    margin-top: 5rem;
+    width: 100%;
+    border-radius: .5rem;
+    background-color: #FFFFFF;
+    display: inline-block;
+}
+
+#page-title{
+    font-size: 3rem;
+    padding: 1rem .5rem; 
+}
+
+.post-img img,
+.post-img a {
+    width: 100%;
+    height: 25rem;
+    display: block;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    object-fit: cover;
+}
+
+.post-img a:hover {
+    opacity: 0.8;
+}
+
+.post-text {
+    background-color: #fff;
+    padding: 3rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    color: #AAAAAA;
+}
+
+.post-text div {
+    padding: 1.2rem 0;
+}
+
+.post-header a {
+    color: #333333;
+    font-size: 2rem;
+}
+
+.post-header a:hover {
+    color: #757575;
+}
+
+.post-short {
+    font-size: 1.5rem;
+}
+
+.post-short a {
+    text-decoration: underline;
+}
+
+.date-subject {
+    font-size: 1.2rem;
+    word-spacing: .5rem;
+    display: inline-block;
+}
+
+.date-subject a {
+    transition: 0s;
+}
+
+/*button bottom*/
+
+.btn-bottom {
+    margin: 5rem 0;
+    display: inline-block;
+    background-color: #888;
+    padding: 1.3rem 2rem;
+    border-radius: .3rem;
+    transition: all .2s;
+}
+
+.btn-bottom:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.btn-bottom a {
+    color: #fff;
+    font-size: 1.6rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:1200px) {
+    #side-bar {
+        width: 350px;
+    }
+
+    main {
+        margin-left: 350px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #side-bar {
+        width: 300px;
+    }
+
+    main {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #side-bar {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    #side-bar hr {
+        visibility: hidden;
+        margin: 1rem 0;
+    }
+
+    #pages ul li {
+        display: inline-block;
+        padding: 0 .8rem;
+    }
+
+    #social ul li {
+        display: inline-block;
+        padding: 0 .8rem;
+    }
+
+    #header span {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 0 2rem;
+    }
+
+    .post {
+        margin-top: 2rem;
+    }
+    
+    .post-text{
+        padding: 2rem 2rem 1rem 2rem;
+    }
+    
+    .post-img img,
+    .post-img a{
+        height: 20rem;
+    }
+}
+
+
